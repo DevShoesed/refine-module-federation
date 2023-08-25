@@ -84,19 +84,7 @@ function App() {
             <Routes>
               <Route
                 element={
-                  <ThemedLayoutV2
-                    Header={() => <Header sticky />}
-                    Sider={(props) => <ThemedSiderV2 {...props} fixed />}
-                    Title={({ collapsed }) => (
-                      <ThemedTitleV2
-                        collapsed={collapsed}
-                        text="refine Project"
-                        icon={<AppIcon />}
-                      />
-                    )}
-                  >
                     <Outlet />
-                  </ThemedLayoutV2>
                 }
               >
                 <Route

@@ -8,17 +8,17 @@ import json from "@rollup/plugin-json";
 
 export default defineConfig(async ({ command }) => ({
 	server: { 
-    port: 8173
-  },
+    	port: 8173
+  	},
+	logLevel: 'info',
 	plugins: [
-    json(),
 		await federation({
 			options: {
 				workspaceRoot: __dirname,
 				outputPath: 'dist',
 				tsConfig: 'tsconfig.json',
 				federationConfig: `module-federation/federation.config.cjs`,
-				verbose: false,
+				verbose: true,
 				dev: command === 'serve',
 			},
 			adapter: createEsBuildAdapter({
@@ -26,6 +26,7 @@ export default defineConfig(async ({ command }) => ({
 				fileReplacements: reactReplacements.dev,
 			}),
 		}),
+		json(),
 		react(),
 	],
 }));

@@ -11,7 +11,13 @@ const {
     skip: [
       'react-dom/server',
       'react-dom/server.node',
+      'react/jsx-dev-runtime',
       '@refinedev/cli',
+      'i18next',
+      'zlib',
+      'http',
+      'https',
+      'tty'
     ],
   });
   
