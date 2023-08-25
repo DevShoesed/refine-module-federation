@@ -7,7 +7,11 @@
     "install:deps": "npm --prefix ./host install && npm --prefix ./mfe1 install",
     "preview:host": "npm --prefix ./host run build && npm --prefix ./host run preview",
     "preview:mfe1": "npm --prefix ./mfe1 run build && npm --prefix ./mfe1 run preview",
-    "preview": "run-p preview:*"
+    "preview": "run-p preview:*",
+    "dev:host": "npm --prefix ./host run dev",
+    "dev:mfe1": "npm --prefix ./mfe1 run dev",
+    "dev": "run-p dev:*"
+
   },
   "author": "Francesco Scarpato",
   "license": "ISC",
