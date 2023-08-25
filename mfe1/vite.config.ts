@@ -21,7 +21,7 @@ export default defineConfig(async ({ command }) => ({
 			},
 			adapter: createEsBuildAdapter({
 				plugins: [],
-				fileReplacements: command === 'serve' ? reactReplacements.dev : reactReplacements.prod,
+				fileReplacements: reactReplacements.dev,
 			}),
 		}),
 		react(),

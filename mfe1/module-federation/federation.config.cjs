@@ -10,8 +10,7 @@ const {
     shared: shareAll(),
     skip: [
       'react-dom/server',
-      'react-dom/server.node',
-      'react/jsx-runtime',
+      'react-dom/server.node'
     ],
   });
   

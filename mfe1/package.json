@@ -3,9 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "dependencies": {
-    
-  },
   "devDependencies": {
     "@ant-design/icons": "^5.0.1",
     "@module-federation/vite": "^0.2.6",
