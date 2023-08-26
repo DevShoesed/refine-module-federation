@@ -7,6 +7,6 @@ const {
     shared: shareAll(),
     skip: [
       'react-dom/server',
-      'react-dom/server.node',
+      'react-dom/server.node'
     ],
   });
